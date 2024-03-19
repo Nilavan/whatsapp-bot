@@ -317,6 +317,3 @@ def bot():
             session.pop('state', default=None)
         return "Session complete"
     return ""
-
-if __name__ == "__main__":
-    app.run()
