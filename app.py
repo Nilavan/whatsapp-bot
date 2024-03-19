@@ -4,6 +4,7 @@ import asyncio
 from rasa.core.agent import Agent
 from rasa.shared.utils.io import json_to_string
 import os
+import urllib
 # import pandas as pd
 
 greetings = ['hello', 'sasa', 'habari', 'aloha', 'jambo', 'uko', 'aje', 'habari yako', 'hi', 'hey', 'help', 'how are you', 'uko fiti', 'uko poa', 'habari ya asubuhi', 'good morning', 'morning', 'good evening', 'good afternoon']
@@ -174,8 +175,13 @@ location_welcome = [
 ]
 
 class Model:
-    def __init__(self, model_path: str) -> None:
-        self.agent = Agent.load(model_path)
+    def __init__(self, url: str) -> None:
+        target_path = url.split("/")[-1]
+        with urllib.request.urlopen(urllib.request.Request(url), timeout=15.0) as response:
+            if response.status == 200:
+                with open(target_path, "wb") as f:
+                    f.write(response.read())
+        self.agent = Agent.load(model_path=target_path)
         print("NLU model loaded")
 
     def message(self, message: str) -> str:
@@ -261,7 +267,7 @@ def bot():
         return "Option 1 closed"
     elif session['state'] == 'option_2':
         incident_msg = user_msg
-        model = Model("nlu-20240313-095913-ascent-originator.tar.gz")
+        model = Model("https://github.com/Nilavan/whatsapp-bot/raw/main/nlu-20240313-095913-ascent-originator.tar.gz")
         intent = model.message(incident_msg)
         session['state'] = 'end'
         send_message(incident_guides[intent][session['language']-1])
@@ -279,7 +285,7 @@ def bot():
         return "Option 1 closed"
     elif session['state'] == 'option_3_details':
         misinformation_msg = user_msg
-        model = Model("nlu-20240318-214623-medium-reflection.tar.gz")
+        model = Model("https://github.com/Nilavan/whatsapp-bot/raw/main/nlu-20240318-214623-medium-reflection.tar.gz")
         intent = model.message(misinformation_msg)
         session['state'] = 'end'
         send_message(misinformation_guides[intent][session['language']-1])
