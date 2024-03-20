@@ -179,10 +179,11 @@ class Model:
         target_path = url.split("/")[-1]
         if not os.path.exists(target_path):
             print('>> model downloading')
-            with urllib.request.urlopen(urllib.request.Request(url), timeout=15.0) as response:
+            with urllib.request.urlopen(urllib.request.Request(url)) as response:
                 if response.status == 200:
                     with open(target_path, "wb") as f:
                         f.write(response.read())
+                    print("model in ", target_path)
         self.agent = Agent.load(model_path=target_path)
         print("NLU model loaded")
 
@@ -190,6 +191,9 @@ class Model:
         message = message.strip()
         result = asyncio.run(self.agent.parse_message(message))
         return result['intent']['name']
+
+model1 = Model("https://github.com/Nilavan/whatsapp-bot/raw/main/nlu-20240313-095913-ascent-originator.tar.gz")
+model2 = Model("https://github.com/Nilavan/whatsapp-bot/raw/main/nlu-20240318-214623-medium-reflection.tar.gz")
 
 account_sid = os.environ['twillio_account_sid']
 auth_token = os.environ['twillio_auth_token']
@@ -269,7 +273,7 @@ def bot():
         return "Option 1 closed"
     elif session['state'] == 'option_2':
         incident_msg = user_msg
-        model = Model("https://github.com/Nilavan/whatsapp-bot/raw/main/nlu-20240313-095913-ascent-originator.tar.gz")
+        model = model1
         intent = model.message(incident_msg)
         session['state'] = 'end'
         send_message(incident_guides[intent][session['language']-1])
@@ -287,7 +291,7 @@ def bot():
         return "Option 1 closed"
     elif session['state'] == 'option_3_details':
         misinformation_msg = user_msg
-        model = Model("https://github.com/Nilavan/whatsapp-bot/raw/main/nlu-20240318-214623-medium-reflection.tar.gz")
+        model = model2
         intent = model.message(misinformation_msg)
         session['state'] = 'end'
         send_message(misinformation_guides[intent][session['language']-1])
