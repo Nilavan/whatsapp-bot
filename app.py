@@ -177,10 +177,12 @@ location_welcome = [
 class Model:
     def __init__(self, url: str) -> None:
         target_path = url.split("/")[-1]
-        with urllib.request.urlopen(urllib.request.Request(url), timeout=15.0) as response:
-            if response.status == 200:
-                with open(target_path, "wb") as f:
-                    f.write(response.read())
+        if not os.path.exists(target_path):
+            print('>> model downloading')
+            with urllib.request.urlopen(urllib.request.Request(url), timeout=15.0) as response:
+                if response.status == 200:
+                    with open(target_path, "wb") as f:
+                        f.write(response.read())
         self.agent = Agent.load(model_path=target_path)
         print("NLU model loaded")
 
