@@ -192,8 +192,6 @@ class Model:
         result = asyncio.run(self.agent.parse_message(message))
         return result['intent']['name']
 
-model1 = Model("nlu-20240313-095913-ascent-originator.tar.gz")
-model2 = Model("nlu-20240318-214623-medium-reflection.tar.gz")
 
 account_sid = os.environ['twillio_account_sid']
 auth_token = os.environ['twillio_auth_token']
@@ -273,7 +271,7 @@ def bot():
         return "Option 1 closed"
     elif session['state'] == 'option_2':
         incident_msg = user_msg
-        model = model1
+        model = Model("nlu-20240313-095913-ascent-originator.tar.gz")
         intent = model.message(incident_msg)
         session['state'] = 'end'
         send_message(incident_guides[intent][session['language']-1])
@@ -291,7 +289,7 @@ def bot():
         return "Option 1 closed"
     elif session['state'] == 'option_3_details':
         misinformation_msg = user_msg
-        model = model2
+        model = Model("nlu-20240318-214623-medium-reflection.tar.gz")
         intent = model.message(misinformation_msg)
         session['state'] = 'end'
         send_message(misinformation_guides[intent][session['language']-1])
