@@ -174,6 +174,12 @@ location_welcome = [
     "Kariani rùrì-inì rwa ìrùa rìa mùrìku. Ndagaagùkanagwo naakùrùa ìhagùko cia mahurùmbì rìaaguo na rìaûkearwo mùcio waku na waiganirie mùndùga."
 ]
 
+nlu_fallback = [
+    "Sorry, I am not able to provide information at this moment",
+    "Samahani, siwezi kutoa taarifa kwa sasa.",
+    "Kerera, mûndû ûkûmenya mûthini nî ng'û."
+]
+
 class Model:
     def __init__(self, url: str) -> None:
         # target_path = url.split("/")[-1]
@@ -273,8 +279,12 @@ def bot():
         incident_msg = user_msg
         model = Model("nlu-20240313-095913-ascent-originator.tar.gz")
         intent = model.message(incident_msg)
+        print(intent)
         session['state'] = 'end'
-        send_message(incident_guides[intent][session['language']-1])
+        if intent in incident_guides:
+            send_message(incident_guides[intent][session['language']-1])
+        else:
+            send_message(nlu_fallback[session['language']-1])
         print(">> anything else opt 2")
         send_message(anything_else_dialog[session['language']-1])
         return "Option 2 closed"
@@ -292,7 +302,10 @@ def bot():
         model = Model("nlu-20240318-214623-medium-reflection.tar.gz")
         intent = model.message(misinformation_msg)
         session['state'] = 'end'
-        send_message(misinformation_guides[intent][session['language']-1])
+        if intent in misinformation_guides:
+            send_message(misinformation_guides[intent][session['language']-1])
+        else:
+            send_message(nlu_fallback[session['language']-1])
         print(">> anything else opt 3")
         send_message(anything_else_dialog[session['language']-1])
         return "Option 2 closed"
