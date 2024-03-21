@@ -176,15 +176,15 @@ location_welcome = [
 
 class Model:
     def __init__(self, url: str) -> None:
-        target_path = url.split("/")[-1]
-        if not os.path.exists(target_path):
-            print('>> model downloading')
-            with urllib.request.urlopen(urllib.request.Request(url)) as response:
-                if response.status == 200:
-                    with open(target_path, "wb") as f:
-                        f.write(response.read())
-                    print("model in ", target_path)
-        self.agent = Agent.load(model_path=target_path)
+        # target_path = url.split("/")[-1]
+        # if not os.path.exists(target_path):
+        #     print('>> model downloading')
+        #     with urllib.request.urlopen(urllib.request.Request(url)) as response:
+        #         if response.status == 200:
+        #             with open(target_path, "wb") as f:
+        #                 f.write(response.read())
+        #             print("model in ", target_path)
+        self.agent = Agent.load(model_path=url)
         print("NLU model loaded")
 
     def message(self, message: str) -> str:
@@ -192,8 +192,8 @@ class Model:
         result = asyncio.run(self.agent.parse_message(message))
         return result['intent']['name']
 
-model1 = Model("https://github.com/Nilavan/whatsapp-bot/raw/main/nlu-20240313-095913-ascent-originator.tar.gz")
-model2 = Model("https://github.com/Nilavan/whatsapp-bot/raw/main/nlu-20240318-214623-medium-reflection.tar.gz")
+model1 = Model("nlu-20240313-095913-ascent-originator.tar.gz")
+model2 = Model("nlu-20240318-214623-medium-reflection.tar.gz")
 
 account_sid = os.environ['twillio_account_sid']
 auth_token = os.environ['twillio_auth_token']
