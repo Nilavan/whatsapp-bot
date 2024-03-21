@@ -182,20 +182,14 @@ nlu_fallback = [
 
 class Model:
     def __init__(self, url: str) -> None:
-        # target_path = url.split("/")[-1]
-        # if not os.path.exists(target_path):
-        #     print('>> model downloading')
-        #     with urllib.request.urlopen(urllib.request.Request(url)) as response:
-        #         if response.status == 200:
-        #             with open(target_path, "wb") as f:
-        #                 f.write(response.read())
-        #             print("model in ", target_path)
         self.agent = Agent.load(model_path=url)
+        print(self.agent)
         print("NLU model loaded")
 
     def message(self, message: str) -> str:
         message = message.strip()
         result = asyncio.run(self.agent.parse_message(message))
+        print(result)
         return result['intent']['name']
 
 
