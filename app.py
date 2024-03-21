@@ -202,6 +202,8 @@ class Model:
 account_sid = os.environ['twillio_account_sid']
 auth_token = os.environ['twillio_auth_token']
 client = Client(account_sid, auth_token)
+model1 = ""
+model2 = ""
 
 app = Flask(__name__)
 app.secret_key = 'oaewedfpioasdofjaposjf'
@@ -277,8 +279,9 @@ def bot():
         return "Option 1 closed"
     elif session['state'] == 'option_2':
         incident_msg = user_msg
-        model = Model("nlu-20240313-095913-ascent-originator.tar.gz")
-        intent = model.message(incident_msg)
+        if model1 == "":
+            model1 = Model("nlu-20240313-095913-ascent-originator.tar.gz")
+        intent = model1.message(incident_msg)
         print(intent)
         session['state'] = 'end'
         if intent in incident_guides:
@@ -299,8 +302,9 @@ def bot():
         return "Option 1 closed"
     elif session['state'] == 'option_3_details':
         misinformation_msg = user_msg
-        model = Model("nlu-20240318-214623-medium-reflection.tar.gz")
-        intent = model.message(misinformation_msg)
+        if model2 == "":
+            model2 = Model("nlu-20240318-214623-medium-reflection.tar.gz")
+        intent = model2.message(misinformation_msg)
         session['state'] = 'end'
         if intent in misinformation_guides:
             send_message(misinformation_guides[intent][session['language']-1])
