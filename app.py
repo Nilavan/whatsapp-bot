@@ -277,9 +277,7 @@ def bot():
         return "Option 1 closed"
     elif session['state'] == 'option_2':
         incident_msg = user_msg
-        if 'model1' not in session:
-            session['model1'] = "nlu-20240313-095913-ascent-originator.tar.gz"
-            model1 = Model("nlu-20240313-095913-ascent-originator.tar.gz")
+        model1 = Model("nlu-20240313-095913-ascent-originator.tar.gz")
         intent = model1.message(incident_msg)
         print(intent)
         session['state'] = 'end'
@@ -301,9 +299,7 @@ def bot():
         return "Option 3 closed"
     elif session['state'] == 'option_3_details':
         misinformation_msg = user_msg
-        if 'model2' not in session:
-            session['model2'] = "nlu-20240318-214623-medium-reflection.tar.gz"
-            model2 = Model("nlu-20240318-214623-medium-reflection.tar.gz")
+        model2 = Model("nlu-20240318-214623-medium-reflection.tar.gz")
         intent = model2.message(misinformation_msg)
         session['state'] = 'end'
         if intent in misinformation_guides:
