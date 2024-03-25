@@ -7,6 +7,9 @@ import os
 import urllib
 # import pandas as pd
 
+model1_path = "nlu-20240313-095913-ascent-originator.tar.gz"
+model2_path = "nlu-20240318-214623-medium-reflection.tar.gz"
+
 greetings = ['hello', 'sasa', 'habari', 'aloha', 'jambo', 'uko', 'aje', 'habari yako', 'hi', 'hey', 'help', 'how are you', 'uko fiti', 'uko poa', 'habari ya asubuhi', 'good morning', 'morning', 'good evening', 'good afternoon']
 
 introduction = [
@@ -271,7 +274,7 @@ def bot():
         return "Option 1 closed"
     elif session['state'] == 'option_2':
         incident_msg = user_msg
-        model1 = Model("nlu-20240313-095913-ascent-originator.tar.gz")
+        model1 = Model(model1_path)
         intent = model1.message(incident_msg)
         print(intent)
         session['state'] = 'end'
@@ -293,7 +296,7 @@ def bot():
         return "Option 3 closed"
     elif session['state'] == 'option_3_details':
         misinformation_msg = user_msg
-        model2 = Model("nlu-20240318-214623-medium-reflection.tar.gz")
+        model2 = Model(model2_path)
         intent = model2.message(misinformation_msg)
         session['state'] = 'end'
         if intent in misinformation_guides:
