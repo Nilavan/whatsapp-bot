@@ -8,7 +8,7 @@ import urllib
 # import pandas as pd
 
 model1_path = "nlu-20240313-095913-ascent-originator.tar.gz"
-model2_path = "nlu-20240318-214623-medium-reflection.tar.gz"
+model2_path = "nlu-20240326-185536-greedy-octree.tar.gz"
 
 greetings = ['hello', 'sasa', 'habari', 'aloha', 'jambo', 'uko', 'aje', 'habari yako', 'hi', 'hey', 'help', 'how are you', 'uko fiti', 'uko poa', 'habari ya asubuhi', 'good morning', 'morning', 'good evening', 'good afternoon']
 
