@@ -13,6 +13,6 @@ class Model:
         print(result)
         return result['intent']['name']
 
-model1 = Model("nlu-20240313-095913-ascent-originator.tar.gz")
-intent = model1.message("forest fires")
+model1 = Model("nlu-20240326-192623-chamfered-similarity.tar.gz")
+intent = model1.message("forest fire")
 print(intent)
