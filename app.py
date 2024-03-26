@@ -9,6 +9,7 @@ import urllib
 
 model1_path = "nlu-20240326-192623-chamfered-similarity.tar.gz"
 model2_path = "nlu-20240326-191859-laminated-lens.tar.gz"
+CONF_THRESH = 0.8
 
 greetings = ['hello', 'sasa', 'habari', 'aloha', 'jambo', 'uko', 'aje', 'habari yako', 'hi', 'hey', 'help', 'how are you', 'uko fiti', 'uko poa', 'habari ya asubuhi', 'good morning', 'morning', 'good evening', 'good afternoon']
 
@@ -192,8 +193,7 @@ class Model:
     def message(self, message: str) -> str:
         message = message.strip()
         result = asyncio.run(self.agent.parse_message(message))
-        print(result)
-        return result['intent']['name']
+        return result['intent']['name'], result['intent']['confidence']
 
 
 account_sid = os.environ['twillio_account_sid']
@@ -275,14 +275,13 @@ def bot():
     elif session['state'] == 'option_2':
         incident_msg = user_msg
         model1 = Model(model1_path)
-        intent = model1.message(incident_msg)
-        print(intent)
-        session['state'] = 'end'
-        if intent in incident_guides:
+        intent, confidence = model1.message(incident_msg)
+        if intent in incident_guides and confidence >= CONF_THRESH:
             send_message(incident_guides[intent][session['language']-1])
         else:
             send_message(nlu_fallback[session['language']-1])
         print(">> anything else opt 2")
+        session['state'] = "end"
         send_message(anything_else_dialog[session['language']-1])
         return "Option 2 closed"
     elif session['state'] == "option_3":
@@ -297,15 +296,15 @@ def bot():
     elif session['state'] == 'option_3_details':
         misinformation_msg = user_msg
         model2 = Model(model2_path)
-        intent = model2.message(misinformation_msg)
-        session['state'] = 'end'
-        if intent in misinformation_guides:
+        intent, confidence = model2.message(misinformation_msg)
+        if intent in misinformation_guides and confidence >= CONF_THRESH :
             send_message(misinformation_guides[intent][session['language']-1])
         else:
             send_message(nlu_fallback[session['language']-1])
         print(">> anything else opt 3")
+        session['state'] = "end"
         send_message(anything_else_dialog[session['language']-1])
-        return "Option 2 closed"
+        return "Option 3 details closed"
     elif session['state'] == 'option_4':
         location_choice = user_msg
         if location_choice in ['1', '2', '3', '4', '5']:
