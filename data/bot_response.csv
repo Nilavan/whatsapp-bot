@@ -1,0 +1,229 @@
+,response_type,0,1,2
+0,introduction,"👋 Hi! I'm Lydia, your virtual assistant for DiRP - the app dedicated to reporting positive or negative social and environmental issues in your community. Our goal is to ensure timely response from relevant authorities, addressing concerns swiftly. By sharing positive stories, we aim to inspire others, fostering unity and the spirit of 'Leave no one behind'. 🌍","👋 Salama! Mimi ni Lydia, msaidizi wako wa kielektroniki kwa DiRP - programu iliyolenga kuripoti masuala chanya au hasi ya kijamii na kimazingira katika jamii yako. Lengo letu ni kuhakikisha majibu ya wakati kutoka kwa mamlaka husika, kushughulikia masuala kwa haraka. Kwa kushiriki hadithi chanya, lengo letu ni kuhamasisha wengine, kukuza umoja na roho ya 'Usiache yeyote nyuma'. 🌍","👋 Ĩngwene! Ūrīa wakwa nū Lydia, rīūrī rīa ūtūka-inī kwa DiRP - irīa ūhingo wa kūrīo ūnū nūci-inī tūhīūka mūrīrī wa mūci-inī wa ūhandū na ūkahenio-inī ūra wa thīnaga. Ūrahūīna rīa thūngū kūrīa gūkena maīri-inī mūrīaga kūrīona, rīherereira nūthīūna-inī kūrī mwega nūciī, ūtūhīūka wa mwega nūcī na rūrīrī wa 'Mwene ūheni mahūngū'. 🌍"
+1,main_menu,"Please choose what you'd like to do:
+1. 📱 How to report social and environmental incidents from your phone
+2. 🌍 Learn about various social and environmental incidents happening around you.
+3. 🚫 Find out how to counter mis and disinformation effectively.
+4. ℹ️ Get information on various initiatives happening in your community and how you can contribute to change","Tafadhali chagua unachotaka kufanya:
+1. 📱 Jinsi ya kuripoti matukio ya kijamii na mazingira kupitia simu yako
+2. 🌍 Jifunze kuhusu matukio mbalimbali ya kijamii na mazingira yanayotokea karibu yako
+3. 🚫 Pata habari jinsi ya kupinga habari za uongo na ufinyo wa taarifa kwa ufanisi
+4. ℹ️ Pata taarifa kuhusu miradi mbalimbali inayoendelea katika jamii yako na jinsi unavyoweza kuchangia kuleta mabadiliko","Thandika ta iria unaiitíirie kúhíra:
+1. 📱 Thathathara iria ya kúgiigiriria mithukiri ya ciana na iria na maitumere magúkúrú-iníria
+2. 🌍 Hingĩka-inírie núkúkúrĩra maithukire maúma maúmwoya na iria-iní maraini
+3. 🚫 Thathathara tene-iníria ĩmũta wa kúgeria kúrihúra-ini na iria ĩngenĩ-iníria
+4. ℹ️ Ĩingĩkire maithukire-iní guandúrwo na matarĩriĩ maúma maraini-iní kwigikĩra ũkũmbĩra gĩkĩ"
+2,download_app_confirm,Would you like to download the 'DiRP' app? (yes/no): ,Ungependa kupakua programu ya 'DiRP'? (ndiyo/hapana): ,Wendete gukata na kurithira app ya 'DiRP'? (eee/apana): 
+3,anything_else_dialog,Is there anything else I can assist you with? (yes/no),Kuna kitu kingine naweza kukusaidia nacho? (ndiyo/hapana),Niathi cia arumenya andu niundithirie? (eee/apana)
+4,incident_confirm,"I'm here to assist! To understand the situation better, can you tell me more about what you've encountered 🕵️‍♂️","Nipo hapa kusaidia! Ili kuelewa hali vizuri, unaweza kunielezea zaidi kuhusu uliyokumbana nayo? 🕵️‍♂️","Nguicio ni tùguo! Ûhoro wakù nì gùkorwo, hagwo nìù ngūkùrana na magùkù mùno wa ûrìkù. 🕵️‍♂️"
+5,app_steps,"Here are the steps to report social and environmental incidents from the DiRP app: 
+1. 📱 Open the DiRP app and log in to your account.
+2. 📸 Use your phone's camera to take a photo of the incident.
+3. 📝 Provide a description of the incident, including its location.
+   Example:
+   - 🚮 Incident Type: Illegal Dumping
+   - 💬 Description: A large pile of garbage illegally dumped on the roadside/sidewalk.
+   - 📷 You can attach a photo as evidence.
+4. 📤 Click on the submit button to send the report.","Hapa kuna hatua za kuripoti matukio ya kijamii na mazingira kutoka kwa programu ya DiRP: 
+1. 📱 Fungua programu ya DiRP na ingia kwenye akaunti yako.
+2. 📸 Tumia kamera ya simu yako kupiga picha ya tukio.
+3. 📝 Toa maelezo ya tukio, ikiwa ni pamoja na eneo lake.
+ Mfano:
+ - 🚮 Aina ya Tukio: Kutupa Taka kiholela
+ - 💬 Maelezo: Mlimbikizo mkubwa wa taka uliotupwa kiholela kando ya barabara/mtaro.
+ - 📷 Unaweza kuambatisha picha kama ushahidi.
+4. 📤 Bonyeza kitufe cha tuma ripoti.","Haya ni maingi ni kúringa na iria mũcii na iria ĩngenĩ-iní kûhûra kũrîa mũrîrîa wa DiRP: 
+1. 📱 Ûndûrîrwo ûrî wa DiRP na ûînjahûkûrûrûrû kûîmba yû mûmbârî yako.
+2. 📸 Kûgûî kûmurata wa mbûrû wa mûîhî kûîthûkûrûî nî mbûrû wa tûkîo.
+3. 📝 Ûngîarûrîre mûthûrî wa tûkîo, ûkîna na mûbîthî wake.
+ Mîcoko:
+ - 🚮 Ûrahûha wa Ûrîîrwo: Gûkûmûkûra Mûhûrû
+ - 💬 Mîrîagûkûra: Ûndûrîrwo wa tûhû rîrîkû nyama wa tûkîrûria kûkûmûkûra kûgûî kîrîrû/ûtûta.
+ - 📷 Ũmwîmû ûmûyûri gûkûî gûtîa mîgûrû."
+6,download_app_steps,"To download the 'DIRP' app, follow these steps:
+1. Go to the App Store or Google Play Store.
+2. Search for 'DIRP'.
+3. Download and install the app.
+4. You can find more information and download the app from [here](link_to_app).","Kupakua programu ya 'DIRP', fuata hatua hizi:
+1. Nenda kwa Duka la App au Duka la Google Play.
+2. Tafuta 'DIRP'.
+3. Pakua na usakinishe programu.
+4. Unaweza kupata maelezo zaidi na kupakua programu kutoka [hapa](link_to_app).","Kurithira app ya 'DIRP', gukaria mwomboko mugiko:
+1. Ota kwa Duka ria Riari kana Duka ria Google Play.
+2. Turagia 'DIRP'.
+3. Rithira na ugorithirie app.
+4. Wendete kurathira maitumere na kwathira app kwa [hapa](link_to_app)."
+7,misinformation_confirm,Would you like information on a specific type of digital misinformation? (yes/no),Ungependa maelezo kuhusu aina fulani ya habari za uongo mtandaoni? (ndiyo/hapana),Ungekùcia mathathi na iria cia hiakúí maruteire? (eee/apana)
+8,counter_misinformation_guide,"In the modern digital era, combatting misinformation and disinformation is crucial. It involves critically evaluating information sources, fact-checking, and verifying before sharing. Encouraging media literacy and promoting critical thinking skills are essential. By staying vigilant and responsible online, we can mitigate the spread of false information and uphold the integrity of information dissemination.","Katika enzi ya kidijitali ya kisasa, kupambana na habari potofu na upotoshaji ni muhimu. Hii inahusisha kutathmini kwa kina vyanzo vya habari, kufanya uhakiki wa ukweli, na kuthibitisha kabla ya kushiriki. Kuhamasisha elimu ya vyombo vya habari na kukuza uwezo wa kufikiri kwa kina ni muhimu. Kwa kubaki macho na kuwa na uwajibikaji mtandaoni, tunaweza kupunguza kuenea kwa habari za uongo na kudumisha uadilifu wa usambazaji wa habari.","Mũtumĩkĩrĩrwo wa mũceke wa ciana na ĩmbíro-inĩ mũgĩĩka ni mũhĩrĩrĩkĩrie. Ĩno ĩrĩa gũrũkĩra ĩtangi ĩngiĩ-inĩ na iga-inĩ, kũongera kwĩtiga na kũndĩkĩrĩra kũhũma kwĩga na kwĩrĩa. Ĩtiga mũndũ-kũta ndĩthuha wa rũrĩri na kũhũma mũhĩrĩa wa kwĩga kũrĩrĩa ĩkĩnda. Nĩ gũmba na kwĩhĩkĩa mbere-inĩ, thĩnaga twĩhĩkĩira kwĩhĩndĩrĩra ĩndĩmĩra ya ĩkĩmũte no nyũmba wa ũndũri wa ĩkĩnda."
+9,misinformation_details_dialog,Could you please describe the type of digital misinformation you're interested in?,"Tafadhali, unaweza eleza aina ya habari za uongo mtandaoni unayopendezwa nayo?","Wandurakìtio, wega undúruka mùgùtì wa hiakúí maruteire unìngùkìria?"
+10,locations_list,"To get started, please tell me your general location: 
+1. Mombasa
+2. Kwale
+3. Kilifi
+4. Tana River
+5. Lamu
+6. Taita/Taveta
+7. Garissa
+8. Wajir
+9. Mandera
+10. Marsabit
+11. Isiolo
+12. Meru
+13. Tharaka-Nithi
+14. Embu
+15. Kitui
+16. Machakos
+17. Makueni
+18. Nyandarua
+19. Nyeri
+20. Kirinyaga
+21. Murang'a
+22. Kiambu
+23. Turkana
+24. West Pokot
+25. Samburu
+26. Trans Nzoia
+27. Uasin Gishu
+28. Elgeyo/Marakwet
+29. Nandi
+30. Baringo
+31. Laikipia
+32. Nakuru
+33. Narok
+34. Kajiado
+35. Kericho
+36. Bomet
+37. Kakamega
+38. Vihiga
+39. Bungoma
+40. Busia
+41. Siaya
+42. Kisumu
+43. Homa Bay
+44. Migori
+45. Kisii
+46. Nyamira
+47. Nairobi City","Ili kuanza, tafadhali niambie mahali pako kwa ujumla: 
+1. Mombasa
+2. Kwale
+3. Kilifi
+4. Tana River
+5. Lamu
+6. Taita/Taveta
+7. Garissa
+8. Wajir
+9. Mandera
+10. Marsabit
+11. Isiolo
+12. Meru
+13. Tharaka-Nithi
+14. Embu
+15. Kitui
+16. Machakos
+17. Makueni
+18. Nyandarua
+19. Nyeri
+20. Kirinyaga
+21. Murang'a
+22. Kiambu
+23. Turkana
+24. West Pokot
+25. Samburu
+26. Trans Nzoia
+27. Uasin Gishu
+28. Elgeyo/Marakwet
+29. Nandi
+30. Baringo
+31. Laikipia
+32. Nakuru
+33. Narok
+34. Kajiado
+35. Kericho
+36. Bomet
+37. Kakamega
+38. Vihiga
+39. Bungoma
+40. Busia
+41. Siaya
+42. Kisumu
+43. Homa Bay
+44. Migori
+45. Kisii
+46. Nyamira
+47. Nairobi City","Ûrùte kùngerera, ûmbere ûrùmù rùa mùrùnda waku: 
+1. Mombasa
+2. Kwale
+3. Kilifi
+4. Tana River
+5. Lamu
+6. Taita/Taveta
+7. Garissa
+8. Wajir
+9. Mandera
+10. Marsabit
+11. Isiolo
+12. Meru
+13. Tharaka-Nithi
+14. Embu
+15. Kitui
+16. Machakos
+17. Makueni
+18. Nyandarua
+19. Nyeri
+20. Kirinyaga
+21. Murang'a
+22. Kiambu
+23. Turkana
+24. West Pokot
+25. Samburu
+26. Trans Nzoia
+27. Uasin Gishu
+28. Elgeyo/Marakwet
+29. Nandi
+30. Baringo
+31. Laikipia
+32. Nakuru
+33. Narok
+34. Kajiado
+35. Kericho
+36. Bomet
+37. Kakamega
+38. Vihiga
+39. Bungoma
+40. Busia
+41. Siaya
+42. Kisumu
+43. Homa Bay
+44. Migori
+45. Kisii
+46. Nyamira
+47. Nairobi City"
+11,interest_list,"Great! Now, what are you interested in?
+1. 🌳 Tree planting
+2. 🧹 Clean up
+3. 🏪 Market day","Vizuri! Sasa, ungependa kujua kuhusu nini?
+1. 🌳 Upandaji wa miti
+2. 🧹 Usafi wa mazingira
+3. 🏪 Siku ya soko","Mwathani! Ta gĩthĩra, ũkĩagũria kũringanĩ?
+1. 🌳 Kuota mugumo
+2. 🧹 Gũkora na nguo cia mbara
+3. 🏪 Mũthenya wa mwĩrangĩ"
+12,goodbye,"Thank you for your time and for using our service! If you have any more questions or need assistance in the future, feel free to reach out by sending a hi. Have a great day ahead! 🌟👋","Asante kwa muda wako na kwa kutumia huduma yetu! Ikiwa una maswali zaidi au unahitaji msaada hapo baadaye, jisikie huru kuwasiliana kwa kutuma ujumbe. Uwe na siku njema! 🌟👋",Ūhoro wa mũhora wako na kūrīa nīgūthambīra ĩrīa rīrīkia! Mūcīa ũhoro wa maithe mīratho nĩmũnene nĩmūkūgūrana kītengū mūrī nĩ gūgūka kārīa. Mūcīaraga tene mūtīe. Ūkūrīre maithe! 🌟👋
+13,general_misinformation,"Here are some ways to stay safe from misinformation online:
+Think before you share: Take a moment to check the source and credibility of information before forwarding it.
+Look for trusted sources: Rely on websites and social media pages of reputable organizations, news outlets, and government agencies.
+Be cautious of emotional appeals: Don't be swayed by information designed to evoke strong emotions (fear, anger) without providing evidence.
+Fact-check suspicious claims: Use independent fact-checking websites or apps to verify information before accepting it as true.
+Talk to others: Discuss information with trusted friends, family, or local community leaders to gain different perspectives.","Hapa kuna njia za kubaki salama dhidi ya habari za uongo mtandaoni:
+Tafakari kabla ya kushiriki: Chukua muda wa kuangalia chanzo na uaminifu wa habari kabla ya kuisambaza.
+Tafuta vyanzo vinavyoaminika: Tegemea tovuti na kurasa za mitandao ya kijamii za taasisi za kuaminika, vyombo vya habari, na mashirika ya serikali.
+Kuwa mwangalifu kwa kuchochea hisia: Usitegwe na habari zinazolenga kuzua hisia kali (hofu, hasira) bila kutoa ushahidi.
+Thibitisha madai ya shaka: Tumia tovuti au programu za uhakiki wa ukweli huru kuhakiki habari kabla ya kuiamini kuwa ya kweli.
+Zungumza na wengine: Jadiliana habari na marafiki wa kuaminika, familia, au viongozi wa jamii ya kienyeji ili upate mitazamo tofauti.","Mūno ũhoro wa kurangira salama ũrīmwo nî mwanyûmba wa tùhuthagia ũrìkù:
+Gĩtwikirie mũkarĩre gũkorĩria: Hĩthūkũ mũkarĩre gũkũmenya mũndũ gũthoma na mũndũo wa wĩndũha mũno mũtumia taundũ nî ngũko inĩ. 
+Ũmũaga taundũ thĩĩ wĩndĩĩĩ: Nĩgũkũmenya kũhugaga ũrìkù na ũrìkũ wa mũcere, mũkarĩo na makûngũ mũno mũtû wa marĩũngû, mũhurabû, na mũhogo wa gĩthungũ. 
+Ĩgĩkorwo nî gũkorwo: Gũrĩtherera naĩmwe wĩngĩ wa ũrìkù ũîrĩtu wa cioigana-inĩ ngono rĩa (mũroro, mũthanĩ) mũkarĩa tûkwĩa ũndũ wa gũtûkũha gũtigĩria ûrìkù.
+Ũmĩra ũmũriĩ wa gĩthũngũ: Mûthamĩrwo thĩinĩ thĩîkwĩaga taundũ ta uhakiki wa ukweli huru mũtûinĩ kũrĩndĩa ũrìkù kũrĩa ũnĩ. 
+Ũrĩkũrĩka na ûhoro: Gũcûrĩana ûrìkù na maingĩ mwĩngĩ wa ũkarĩre wa wĩngĩ, wakwa, na wakù ûgũrĩa mũcere wa cioigana-inĩ kũîhana mwanyûmba wĩndĩĩĩ."
+14,location_welcome,Welcome to your community information hub. I can help you find out about various initiatives happening in your area and how you can contribute to a sustainable future.,Karibu kwenye kituo chako cha habari za jamii. Nawezakusaidia kupata habari kuhusu miradi mbalimbali inayotokea eneo lako na jinsi unavyoweza kuchangia katika mustakabali endelevu.,Kariani rùrì-inì rwa ìrùa rìa mùrìku. Ndagaagùkanagwo naakùrùa ìhagùko cia mahurùmbì rìaaguo na rìaûkearwo mùcio waku na waiganirie mùndùga.
+15,nlu_fallback,"Sorry, I am not able to provide information at this moment","Samahani, siwezi kutoa taarifa kwa sasa.","Kerera, mûndû ûkûmenya mûthini nî ng'û."

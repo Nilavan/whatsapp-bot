@@ -1,0 +1,130 @@
+,response_type,0,1,2
+0,Fake_News,"When encountering news that seems suspicious, consider the following:
+1. Verify the source: Check if the news is from a reputable and reliable source.
+2. Cross-check information: Look for the same news on other trustworthy websites to confirm its authenticity.
+3. Analyze the content: Pay attention to misleading headlines, grammatical errors, or unusual formatting, which may indicate fake news.
+Remember, critical thinking is essential to avoid falling for fake news.","Unapoona habari inayoonekana kuwa ya shaka, chukua hatua zifuatazo:
+1. Hakiki chanzo: Angalia ikiwa habari inatoka kwenye chanzo kilichoaminika na cha kuaminika.
+2. Hakiki habari: Tafuta habari hiyo hiyo kwenye tovuti zingine za kuaminika kuthibitisha uhalali wake.
+3. Changanya yaliyomo: Zingatia vichwa vya habari visivyofaa, makosa ya sarufi, au muundo usio wa kawaida, ambao unaweza kuashiria habari za uwongo.
+Kumbuka, mawazo ya kina ni muhimu ili kuepuka kuanguka kwenye habari za uwongo.","Ĩriagwo no mũrathimo mũheto itũha tũhoya thĩinĩ:
+1. Gũtigana cĩhĩtu: Mũhagia ĩrĩa rĩrĩahĩrĩra gũtiganira mũhũrũ-inĩ na mũrathimo wa kũmũtĩka.
+2. Gũhagia mũto: Hiria ĩrĩa rĩrĩahĩrĩra no cũgacagati kana tũhũrũ-twa mũrathimo guoko-ku-inĩ kũrĩthĩka mũrathimo ũrĩa wakĩkĩa.
+3. Ĩcire kwa cĩama: Mũhugũkia kĩthera kĩa kũndũkũrwo, ngũnja, kana kũndũkũrwo nĩayo inĩ cĩgacagati, irĩa rĩkarĩa kwĩĩrĩkĩra mũrathimo wa thĩinĩ.
+Kwĩrĩrĩka, ũrĩa wa gũmĩona ũndũ mwega kũrĩa kũteera thĩinĩ."
+1,Misleading_Images,"When you come across images that seem suspicious, follow these steps:
+1. Reverse image search: Use tools like Google Reverse Image Search to find the original source of the image.
+2. Analyze context: Look for additional context or information that may clarify the image's meaning.
+3. Verify with reliable sources: Check if reputable news outlets or fact-checking websites have reported on the image.
+Remember, scrutinizing images carefully can help identify misleading or manipulated visuals.","Unapoona picha ambazo zinaonekana kuwa za shaka, fuata hatua hizi:
+1. Tafuta picha kwa kurejesha: Tumia zana kama Google Reverse Image Search kufanya utafutaji wa chanzo halisi cha picha.
+2. Changanua muktadha: Tafuta muktadha au habari zaidi ambayo inaweza kufafanua maana ya picha.
+3. Hakiki kwa vyanzo vinavyoaminika: Hakiki ikiwa vituo vya habari vya kuaminika au tovuti za uhakiki wa ukweli zimetoa ripoti kuhusu picha.
+Kumbuka, kuchunguza picha kwa uangalifu kunaweza kusaidia kutambua picha zenye kudanganya au zilizobadilishwa.","No gũtiganĩra mũkĩrĩha gĩkĩngĩ njĩrũ mũheto itũha ũrĩa wĩgĩĩrwo mũrĩi wĩnyu, ũrĩkĩrĩka ĩmwe:
+1. Gũtigana cĩhĩtu nĩ kũkũrithĩka: Mũhagia ngari cia kũkũrithĩka nginya Google Reverse Image Search kũrĩarĩarwo ũrĩa wakĩkĩa wa picha.
+2. Ĩcire mũcoi: Gũta mũcoi kana habari cia njĩra cia ciana kĩrĩa irĩa rĩkarĩa kwĩĩrĩkĩra gĩthurĩkĩha ũrĩa wĩgĩĩrwo wa picha.
+3. Hakiki nĩ vĩcĩa vĩmwe vĩmwe vĩĩrĩĩkĩrĩwo: Hakiki mũgoigu mũheto ĩrĩa cia-inĩ cia-inĩ kĩrĩa cĩigũkanio nĩciĩa cĩkũrathĩra kũhĩrĩkĩria ũrĩa wĩgĩĩrwo wa picha.
+Kwĩrĩrĩka, kũriũria picha kwa mũgũrĩte-inĩ kũnandĩĩka kũhĩrĩkĩria picha ciana kĩũthĩ."
+2,Manipulated_Videos,"To identify manipulated videos, consider these steps:
+1. Examine source: Check the original source of the video and its credibility.
+2. Analyze content: Scrutinize the video's content for any signs of manipulation or editing.
+3. Cross-reference: Compare the video with other reliable sources to verify its authenticity.
+Being vigilant about manipulated videos can help prevent the spread of misinformation.","Kutambua video zilizobadilishwa, fikiria hatua hizi:
+1. Angalia chanzo: Hakiki chanzo halisi cha video na uaminifu wake.
+2. Changanua maudhui: Chunguza maudhui ya video kwa ishara yoyote ya ubadilishaji au uhariri.
+3. Tafuta vyanzo vingine: Linganisha video na vyanzo vingine vya kuaminika kuhakikisha uhalisi wake.
+Kuwa macho kuhusu video zilizobadilishwa kunaweza kusaidia kuzuia kusambaa kwa habari za uongo.","Gũkĩrĩrĩra video-inĩ ciana cĩkwĩtiganĩria kwĩĩrĩkĩra, ũhĩkĩire ìmwe-inĩ ciana:
+1. Ùrĩĩkĩra ùrĩa wĩgĩĩrwo: Ùrĩkĩrĩra ùrĩa wĩgĩĩrwo wa video na ǹjira ĩnjorĩcaga ciana ciarĩa ĩmwe.
+2. Gũthiikĩra ìciara: Guuuurĩra ìciara ya video ĩkĩkĩa ìthaha ciana ciarĩa ìkĩrĩĩra nĩ ĩtĩkĩrĩ-inĩ-inĩ.
+3. Tigana-inĩ kũrĩtiganĩria: Tiga video na vyanzo vingine vya kuaminika kũgũrũkĩra kũrĩkĩthĩra ĩnĩ.
+Kũandũkũrwo mbere kũtiganĩria video zilizobadilishwa kunĩkĩrĩria kũgũrĩa kũhĩrĩkĩria kũkũrĩkĩra mũcoi-inĩ."
+3,Conspiracy_Theories,"When encountering conspiracy theories:
+1. Verify sources: Check the credibility of sources spreading the theory.
+2. Fact-check: Research the claims made in the theory using reliable sources.
+3. Critical thinking: Analyze the evidence and logic behind the theory objectively.
+Being critical of conspiracy theories helps in discerning fact from fiction.","Unapokutana na nadharia za njama:
+1. Hakiki vyanzo: Hakikisha uaminifu wa vyanzo vinavyosambaza nadharia.
+2. Hakiki ukweli: Chambua madai yaliyotolewa katika nadharia kwa kutumia vyanzo vya kuaminika.
+3. Fikira kwa uangalifu: Chunguza ushahidi na mantiki nyuma ya nadharia kwa njia ya kiaobjektif.
+Kuwa na maoni ya kufikiria kwa uangalifu kuhusu nadharia za njama husaidia kuchambua ukweli na uwongo.","Mũgũtĩka-inĩ na-inĩgũhĩka wa nĩkĩga wa njama:
+1. Ùhĩkĩire ùrĩĩkĩra wa mũrĩmĩrĩ wa-inĩkĩga ùthamĩka wa njama.
+2. Ùhĩkĩire njũga: Gũrĩra mĩrĩmirĩ-inĩ ya-inĩkĩga ĩkĩrĩa njama nĩ kũtumĩria vyanzo vya-inĩgĩca cĩahũ.
+3. Mĩbĩire kĩrĩa kĩrĩa: Gũrĩra ùshahĩdi na ùmwarĩcaga nyũmba ciana ciarĩa ĩkĩrĩa njama na-inĩgĩca kĩaobĩci.
+Kũwa na maoni ya kufikiria kwa uangalifu kũriukĩra njama za njama kunĩkĩrĩria kũgũrĩa kũhĩrĩkĩria nĩkĩrĩĩra na ĩtũ kũhĩrĩkĩria."
+4,Clickbait_Headlines,"Tips to Identify Clickbait Headlines:
+1. Examine the headline: Look for sensational language or exaggerated claims.
+2. Check the source: Verify the credibility of the website or publication.
+3. Read beyond the headline: Explore the full article to understand the context.
+Familiarizing yourself with clickbait tactics helps in avoiding misleading information.","Vidokezo vya Kutambua Vichwa vya Clickbait:
+1. Hakiki kichwa cha habari: Tafuta lugha ya kusisimua au madai yaliyozidi.
+2. Hakiki chanzo: Thibitisha uaminifu wa tovuti au machapisho.
+3. Soma zaidi ya kichwa cha habari: Tafiti makala kamili ili kuelewa muktadha.
+Kutambua mwenyewe mikakati ya clickbait husaidia kuepuka habari za kupotosha.","Njĩhĩa-inĩ kũrĩria ĩtũ gũcũgĩrĩria maundũ gũkũbũra:
+1. Hũhĩkĩria kĩrĩa kũrĩkĩra: Ùtũme nĩrĩkũĩmĩra ñgĩka wa kũhĩrĩka ñgĩrĩhĩkana kana mĩrĩa ĩtũkĩrĩkana.
+2. Hũhĩkĩria mũrĩmĩrĩ: Thĩbĩrĩrie gũcĩahũrĩrĩra wa-itũmĩ wa-inĩkĩrĩ wa-inĩkĩrĩra.
+3. Ũgĩkĩre nĩ kĩrĩa kũrĩkĩra: Thĩbĩrĩrie mũrĩmĩrĩ wĩhĩ kũhĩrĩkĩria mũcũgĩ kana mwĩnjĩ.
+Kũĩkĩrĩria mũnene gũthĩkĩria ĩtũ kũharĩrĩria njĩha-ĩnĩ."
+5,Satirical_Articles_Misinterpreted_as_Real,"Identifying Satirical Articles:
+1. Check the tone: Satirical articles often use humor or exaggeration.
+2. Investigate the source: Verify if the publication is known for satire.
+3. Read disclaimers: Satirical websites typically have disclaimers indicating their content is not factual.
+Being aware of satirical content helps prevent misinterpretation.","Kutambua Makala ya Kukejeli:
+1. Hakiki toni: Makala ya kukejeli mara nyingi hutumia ucheshi au ukubwa.
+2. Chunguza chanzo: Thibitisha ikiwa machapisho yanajulikana kwa kukejeli.
+3. Soma kauli za kutokana: Tovuti za kukejeli mara nyingi zina kauli za kutokana zinazoashiria yaliyomo sio ya ukweli.
+Kuwa na ufahamu wa yaliyomo kukejeli husaidia kuzuia uelewa usio sahihi.","Rĩrĩa Mĩkorio ya Kũhĩrĩka:
+1. Hũhĩkĩria gĩtũmi: Mĩkorio ya kũhĩrĩka mara nyingi mĩnjĩ nĩmĩthĩmbĩ ĩnĩ ĩtũkĩnyĩra-inĩkĩra mũgũthĩmbĩ.
+2. Hũhĩkĩria mũrĩmĩrĩ: Thĩbĩrĩrie kĩrĩmĩrĩ na ĩrĩa rĩa kũhĩrĩka.
+3. Soma kũrĩrĩra rĩrĩrĩa ĩtũcĩ: Tovuti-inĩ kũhĩrĩka mara nyingi ĩnoona kũrĩrĩra ĩrĩa rĩa kũhĩrĩka ĩrĩa rĩa kũhĩrĩka.
+Kũrĩgĩrĩria mĩrĩthĩ ya kũhĩrĩka hutũrĩrĩria kũharĩkĩa ngĩcio."
+6,Out_of_Context_Quotes,"Identifying Out-of-Context Quotes:
+1. Verify the source: Check if the quote is accurately attributed and not taken out of context.
+2. Investigate the context: Read the surrounding text or conversation to understand the true meaning.
+3. Look for original sources: Seek the original interview, speech, or document to confirm the quote's authenticity.
+Being cautious of out-of-context quotes helps avoid misinterpretation.","Kutambua Marejeleo yaliyotolewa nje ya Muktadha:
+1. Thibitisha chanzo: Angalia ikiwa marejeleo yametolewa kwa usahihi na hayajachukuliwa nje ya muktadha.
+2. Chunguza muktadha: Soma maandishi au mazungumzo yanayozunguka ili kuelewa maana halisi.
+3. Tafuta vyanzo vya awali: Tafuta mahojiano ya awali, hotuba, au hati ya awali ili kuthibitisha uhalisia wa marejeleo.
+Kuwa makini na marejeleo yaliyotolewa nje ya muktadha husaidia kuepuka uelewa usio sahihi.","Kũrĩgĩrĩria Mũkoragwo wa Gĩthũmwo-inĩ:
+1. Thĩbĩrĩrie mũrĩmĩrĩ: Rũrekeire ikiwa mũkoragwo ũrĩa ũrĩteĩra mũgĩcĩmbĩ na ũgĩcĩa ũrĩteĩra kũkũmba-inĩkĩra.
+2. Hũhĩkĩria mũkũrĩmĩrĩ: Soma marĩmĩtu nĩ magĩcĩa gĩthũmwo cia mũkũrĩmĩrĩ wĩrĩa ũgĩtĩmba-inĩkĩra.
+3. Tafuta vĩrĩa cia awahũ: Tafuta mũtiganĩ wa awahũ, ndarĩkĩ, ao gĩtigĩ wa awahũ wĩrĩa ũrĩteĩra gĩthũmwo-inĩ.
+Kũrĩgĩrĩria mũkoragwo wa gĩthũmwo-inĩ hutũrĩrĩria kũharĩkĩa ngĩcio."
+7,Fake_Social_Media_Profiles,"Identifying Fake Social Media Profiles:
+1. Check profile information: Look for inconsistencies or suspicious details in the profile's bio, photos, and posts.
+2. Review activity: Check the frequency and nature of posts, likes, and comments to determine authenticity.
+3. Verify connections: Investigate the profile's friends or followers to see if they are genuine accounts.
+Being cautious of fake profiles helps prevent online scams and identity theft.","Kutambua Profaili Bandia za Mitandao ya Kijamii:
+1. Angalia maelezo ya profaili: Tafuta kutofautiana au maelezo yenye shaka katika maelezo, picha, na machapisho ya profaili.
+2. Hakiki shughuli: Angalia mara ngapi na aina ya machapisho, vipendwa, na maoni ili kuthibitisha uhalisia.
+3. Thibitisha mawasiliano: Chunguza marafiki au wafuasi wa profaili ili kuona ikiwa ni akaunti halisi.
+Kuwa makini na profaili bandia husaidia kuzuia udanganyifu mtandaoni na wizi wa utambulisho.","Kũrĩgĩrĩria Maitû-inĩ Matariikũ-inĩ:
+1. Thĩbĩrĩria maitû-inĩ: Hũhĩkĩria mbere cia gũcũkũria ao taariika naĩtamĩ mũtĩrĩ na mĩhĩĩra ya maitû-inĩ, maĩndĩkĩ na mĩhĩĩra ya maitû-inĩ.
+2. Thĩbĩrĩria mĩganĩ: Angalia mĩhĩĩra na aina ya machapisho, maĩndĩkĩ na maĩndĩkĩ cia machapisho, mĩiganĩ na maĩndĩkĩ cia kũigana nĩendete kũigana nĩendete nĩahĩrĩka.
+3. Thĩbĩrĩria ĩngĩmahũrĩko: Ĩgĩcĩire maitû-inĩ maĩndĩkĩ cia marĩrĩ mbere cia maitû nĩ magĩcĩa-inĩ mahũrĩko.
+Kũrĩgĩrĩria maitû-inĩ matariikũ-inĩ hutũrĩrĩria kũharĩkĩa maĩndĩkĩ-inĩ maĩtariikũ."
+8,Misinformation_about_Health,"Recognizing Misinformation about Health:
+1. Verify sources: Cross-check information from multiple reliable sources before believing or sharing.
+2. Consult experts: Seek advice from healthcare professionals or reputable organizations for accurate information.
+3. Educate yourself: Stay informed about health topics through credible resources to distinguish fact from fiction.
+Being vigilant about health misinformation promotes well-being and prevents unnecessary panic.","Kutambua Habari za Uongo kuhusu Afya:
+1. Thibitisha vyanzo: Hakiki taarifa kutoka vyanzo vingi na vya kuaminika kabla ya kuamini au kushiriki.
+2. Ona wataalam: Tafuta ushauri kutoka kwa wataalam wa afya au mashirika yanayojulikana kwa taarifa sahihi.
+3. Jifunze: Jisomee kuhusu maswala ya afya kupitia vyanzo vinavyoaminika ili kutofautisha ukweli na uwongo.
+Kuwa macho kuhusu habari za uongo kuhusu afya kunakuza ustawi na kuzuia taharuki isiyo ya lazima.","Kũrĩgĩrĩria Gũkĩra Taarifa ya Mũcere
+1. Thĩbĩrĩria mĩhĩrĩ: Kĩguoya taarifa mĩaka maingĩhĩrĩrĩ kũrĩa nĩhĩrĩ kĩndĩ kũhĩrĩ nĩa kũgũtarĩa.
+2. Thĩhĩra maĩndĩrĩ makĩ: Rũtĩkĩra mũcere wa mĩhĩrĩ maingĩ mĩega ma nĩgĩcũrĩkana thĩnĩni tũhĩkania maĩndĩrĩ mĩega.
+3. Jũrĩa wakũ: Tũtĩkĩra mũthĩra wakũ kũrĩa watũ wa mahandĩka ao tũmakĩ taũ wa ƒũkũhũka ũhĩrĩro wa taarifa ũrĩa inĩtwa. Kũrĩgĩrĩria kũharĩkĩa mũcere-inĩ wĩcokanĩrĩria ũtũgatũ, rĩrĩmwo rĩa atĩrĩ."
+9,Political_Propaganda,"Identifying Political Propaganda:
+1. Question narratives: Critically evaluate political messages and consider different perspectives.
+2. Fact-check: Verify information from credible sources to confirm accuracy before accepting it as truth.
+3. Stay informed: Stay updated on current events and political developments through reliable news outlets.
+Being vigilant about political propaganda helps maintain informed decision-making and democracy.","Kutambua Propaganda za Kisiasa:
+1. Uliza masimulizi: Fikiria kwa kina ujumbe wa kisiasa na tafakari mitazamo tofauti.
+2. Hakiki ukweli: Hakiki taarifa kutoka vyanzo vya kuaminika kuthibitisha usahihi kabla ya kukubali kama ukweli.
+3. Baki mwenye habari: Endelea kufuatilia matukio ya sasa na maendeleo ya kisiasa kupitia vyanzo vya habari vinavyoaminika.
+Kuwa macho kuhusu propaganda za kisiasa husaidia kudumisha uamuzi ulio na taarifa na demokrasia.","Kũrĩgĩrĩria Propaganda ya Gũtũmarĩka
+1. Ũcokanĩrĩria ngwetereire: Gũcaekerwo na atĩrĩ ya mĩhĩrĩ maingĩrĩ gũrĩtia ũhĩrĩro wa kũrĩa wa mĩhĩrĩ na ũcokanĩria gũtiga mathangu maingĩhĩrĩ.
+2. Thĩbĩrĩria ukũrĩ: Thĩbĩrĩria taarifa mĩaka mũcere ũrĩa tũrĩrĩkĩrwo maũndũ ma ũrĩa itũrĩtĩte tũtĩgana-inĩ wĩcokanĩrĩria ũtũgatũ.
+3. Rũtĩkĩra mũcere-inĩ: Rũtĩkĩra na mũcere wa mĩaka nĩkũrĩa taarifa ya ũhĩrĩro na mĩega-inĩ ya kũrĩa mathangu ma mũcere.
+Kũrĩgĩrĩria-inĩ gũtũmarĩka wa propaganda ya gũtũmarĩka gũrĩa atĩrĩ na ũtũgatũ wa kũrĩa ũtũgatũ na demokrasia."

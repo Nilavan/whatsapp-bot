@@ -11,6 +11,10 @@ class Model:
         result = asyncio.run(self.agent.parse_message(message))
         return result['intent']['name'], result['intent']['confidence']
 
-model1 = Model("nlu-20240326-192623-chamfered-similarity.tar.gz")
-intent, conf = model1.message("social media")
+model1 = Model("models/nlu-20240326-232920-purple-compete.tar.gz")
+intent, conf = model1.message("forest fire")
+print(intent, conf)
+
+model2 = Model("models/nlu-20240327-191236-icy-aside.tar.gz")
+intent, conf = model2.message("social media")
 print(intent, conf)
