@@ -1,5 +1,5 @@
 ,response_type,0,1,2
-0,Fake_News,"When encountering news that seems suspicious, consider the following:
+0,False_News,"When encountering news that seems suspicious, consider the following:
 1. Verify the source: Check if the news is from a reputable and reliable source.
 2. Cross-check information: Look for the same news on other trustworthy websites to confirm its authenticity.
 3. Analyze the content: Pay attention to misleading headlines, grammatical errors, or unusual formatting, which may indicate fake news.

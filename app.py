@@ -5,10 +5,11 @@ from rasa.core.agent import Agent
 from rasa.shared.utils.io import json_to_string
 import os
 import pandas as pd
+import time
 
 model1_path = "models/nlu-20240326-232920-purple-compete.tar.gz"
 model2_path = "models/nlu-20240327-191236-icy-aside.tar.gz"
-CONF_THRESH = 0.8
+CONF_THRESH = 0.5
 
 greetings = ['hello', 'sasa', 'habari', 'aloha', 'jambo', 'uko', 'aje', 'habari yako', 'hi', 'hey', 'help', 'how are you', 'uko fiti', 'uko poa', 'habari ya asubuhi', 'good morning', 'morning', 'good evening', 'good afternoon']
 
@@ -58,12 +59,12 @@ nlu_fallback = bot_response[bot_response['response_type'] == "nlu_fallback"].val
 class Model:
     def __init__(self, url: str) -> None:
         self.agent = Agent.load(model_path=url)
-        print(self.agent)
         print("NLU model loaded")
 
     def message(self, message: str) -> str:
         message = message.strip()
         result = asyncio.run(self.agent.parse_message(message))
+        print(result)
         return result['intent']['name'], result['intent']['confidence']
 
 
@@ -83,10 +84,12 @@ def bot():
     user_msg = " ".join(user_msg.split()) 
     if 'state' not in session or user_msg in greetings:
         session['state'] = 'start'
+    print("Session state: ", session['state'])
 
     if session['state'] == 'start':
         send_message("👋 Hi there! I'm Lydiah, your helper for reporting positive or negative social and environmental issues happening where you live 🏘️. Our goal is to ensure timely response from relevant authorities, addressing concerns swiftly ⏰. By sharing positive issues happening in your community, we aim to inspire people in other areas, fostering unity and the spirit of 'Leave no one behind' 🌍.")
         session['state'] = "confirm_kenya"
+        time.sleep(1)
         send_message("Just to let you know, I am designed to work exclusively within Kenya. Could you please confirm that you're currently in Kenya? (yes/no)")
     elif session['state'] == 'confirm_kenya':
         confirm_kenya = user_msg
@@ -104,6 +107,7 @@ def bot():
             session['state'] = 'main_menu'
             send_message(introduction[session['language']-1])
             print(">> Main menu")
+            time.sleep(1)
             send_message(main_menu[session['language']-1])
         else:
             send_message("Please enter a valid language choice (1, 2, 3).")
@@ -117,6 +121,7 @@ def bot():
                 session['state'] = 'option_1'
                 send_message(app_steps[session['language']-1])
                 print(">> download app")
+                time.sleep(1)
                 send_message(download_app_confirm[session['language']-1])
             elif menu_choice == 2:
                 session['state'] = 'option_2'
@@ -125,11 +130,13 @@ def bot():
                 session['state'] = 'option_3'
                 send_message(general_misinformation[session['language']-1])
                 print(">> misinformation")
+                time.sleep(1)
                 send_message(misinformation_confirm[session['language']-1])
             elif menu_choice == 4:
                 session['state'] = 'option_4'
                 send_message(location_welcome[session['language']-1])
                 print(">> location selection")
+                time.sleep(1)
                 send_message(locations_list[session['language']-1])
         else:
             send_message("Please enter a valid menu choice (1, 2, 3, 4).")
@@ -139,20 +146,24 @@ def bot():
         if download_choice in ['yes', 'ndiyo', 'eee']:
             session['state'] = 'end'
             send_message(download_app_steps[session['language']-1])
+            time.sleep(1)
         print(">> anything else opt 1")
         session['state'] = "end"
         send_message(anything_else_dialog[session['language']-1])
         return "Option 1 closed"
     elif session['state'] == 'option_2':
         incident_msg = user_msg
+        session['state'] = "end"
         model1 = Model(model1_path)
         intent, confidence = model1.message(incident_msg)
         if intent in incident_guides and confidence >= CONF_THRESH:
+            session['state'] = "end"
             send_message(incident_guides[intent][session['language']-1])
         else:
+            session['state'] = "end"
             send_message(nlu_fallback[session['language']-1])
         print(">> anything else opt 2")
-        session['state'] = "end"
+        time.sleep(1)
         send_message(anything_else_dialog[session['language']-1])
         return "Option 2 closed"
     elif session['state'] == "option_3":
@@ -166,14 +177,17 @@ def bot():
         return "Option 3 closed"
     elif session['state'] == 'option_3_details':
         misinformation_msg = user_msg
+        session['state'] = "end"
         model2 = Model(model2_path)
         intent, confidence = model2.message(misinformation_msg)
-        if intent in misinformation_guides and confidence >= CONF_THRESH :
+        if intent in misinformation_guides and confidence >= CONF_THRESH:
+            session['state'] = "end"
             send_message(misinformation_guides[intent][session['language']-1])
         else:
+            session['state'] = "end"
             send_message(nlu_fallback[session['language']-1])
         print(">> anything else opt 3")
-        session['state'] = "end"
+        time.sleep(1)
         send_message(anything_else_dialog[session['language']-1])
         return "Option 3 details closed"
     elif session['state'] == 'option_4':
@@ -193,6 +207,7 @@ def bot():
             send_message(interest_details[interest_choice][session['language']-1])
             session.pop('location', default=None)
             print(">> anything else opt 4")
+            time.sleep(1)
             send_message(anything_else_dialog[session['language']-1])
         else:
             send_message(f"Please enter a valid interest choice (1, 2, 3)")
