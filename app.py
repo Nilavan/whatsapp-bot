@@ -144,49 +144,44 @@ def bot():
     elif session['state'] == 'option_1':
         download_choice = user_msg
         if download_choice in ['yes', 'ndiyo', 'eee']:
-            session['state'] = 'end'
             send_message(download_app_steps[session['language']-1])
             time.sleep(1)
         print(">> anything else opt 1")
-        session['state'] = "end"
+        session['state'] = 'end'
         send_message(anything_else_dialog[session['language']-1])
         return "Option 1 closed"
     elif session['state'] == 'option_2':
         incident_msg = user_msg
-        session['state'] = "end"
         model1 = Model(model1_path)
         intent, confidence = model1.message(incident_msg)
         if intent in incident_guides and confidence >= CONF_THRESH:
-            session['state'] = "end"
             send_message(incident_guides[intent][session['language']-1])
         else:
-            session['state'] = "end"
             send_message(nlu_fallback[session['language']-1])
         print(">> anything else opt 2")
+        session['state'] = 'end'
         time.sleep(1)
         send_message(anything_else_dialog[session['language']-1])
         return "Option 2 closed"
-    elif session['state'] == "option_3":
+    elif session['state'] == 'option_3':
         misinformation_choice = user_msg
         if misinformation_choice in ['yes', 'ndiyo', 'eee']:
             session['state'] = 'option_3_details'
             send_message(misinformation_details_dialog[session['language']-1])
         else:
-            session['state'] = "end"
+            session['state'] = 'end'
             send_message(anything_else_dialog[session['language']-1])
         return "Option 3 closed"
     elif session['state'] == 'option_3_details':
         misinformation_msg = user_msg
-        session['state'] = "end"
         model2 = Model(model2_path)
         intent, confidence = model2.message(misinformation_msg)
         if intent in misinformation_guides and confidence >= CONF_THRESH:
-            session['state'] = "end"
             send_message(misinformation_guides[intent][session['language']-1])
         else:
-            session['state'] = "end"
             send_message(nlu_fallback[session['language']-1])
         print(">> anything else opt 3")
+        session['state'] = 'end'
         time.sleep(1)
         send_message(anything_else_dialog[session['language']-1])
         return "Option 3 details closed"
