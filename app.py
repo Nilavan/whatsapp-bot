@@ -99,7 +99,7 @@ def bot():
             send_message('To continue, please choose your preferred language\n1. English\n2. Swahili\n3. Kikuyu')
         else:
             send_message("Apologies, but I don't have information on locations outside Kenya at the moment. If you have any other questions or need further assistance, feel free to ask. Goodbye!")
-            session.pop('state', default=None)
+            session.pop('state')
         return "Language selection initiated."
     elif session['state'] == 'language_selection':
         language_choice = user_msg
@@ -201,7 +201,7 @@ def bot():
             interest_choice = int(interest_choice)
             session['state'] = 'end'
             send_message(interest_details[interest_choice][session['language']-1])
-            session.pop('location', default=None)
+            session.pop('location')
             print(">> anything else opt 4")
             time.sleep(1)
             send_message(anything_else_dialog[session['language']-1])
@@ -214,6 +214,6 @@ def bot():
             send_message(main_menu[session['language']-1])
         else:
             send_message(goodbye[session['language']-1])
-            session.pop('state', default=None)
+            session.pop('state')
         return "Session complete"
     return ""
