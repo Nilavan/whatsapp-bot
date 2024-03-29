@@ -1,4 +1,4 @@
-from flask import Flask, request, session
+from flask import Flask, request
 from twilio.rest import Client
 import asyncio
 from rasa.core.agent import Agent
@@ -74,6 +74,7 @@ client = Client(account_sid, auth_token)
 
 app = Flask(__name__)
 app.secret_key = 'oaewedfpioasdofjaposjf'
+session = {}
 
 def send_message(message):
     client.messages.create(to=request.values.get("From"), from_=request.values.get("To"), body=message)
